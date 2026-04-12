@@ -31,6 +31,6 @@ if (contactForm) {
     const name = contactForm.querySelector('[name="name"]')?.value || '';
     const message = contactForm.querySelector('[name="message"]')?.value || '';
     const text = encodeURIComponent(`Hello Adanma, my name is ${name}. ${message}`);
-    window.open(`https://wa.me/2348000000000?text=${text}`, '_blank');
+    window.open(`https://wa.me/2348153127309?text=${text}`, '_blank');
   });
 }
