@@ -4,6 +4,7 @@ services:
     runtime: static
     buildCommand: npm run build
     staticPublishPath: dist
+    startCommand: npm start
     pullRequestPreviewsEnabled: true
     headers:
       - path: /*
