@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed": "#dbe1ff",
+                    "background": "#f7f9ff",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#eceef3",
+                    "surface": "#f7f9ff",
+                    "inverse-surface": "#2d3135",
+                    "inverse-on-surface": "#eef1f6",
+                    "on-surface": "#181c20",
+                    "on-tertiary-fixed-variant": "#27438a",
+                    "tertiary-fixed-dim": "#b4c5ff",
+                    "secondary-fixed-dim": "#dac58d",
+                    "surface-container-highest": "#e0e2e8",
+                    "on-secondary-fixed-variant": "#544519",
+                    "secondary-fixed": "#f7e1a6",
+                    "on-surface-variant": "#4d4635",
+                    "surface-tint": "#735c00",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#d0c5af",
+                    "outline": "#7f7663",
+                    "on-tertiary-container": "#254188",
+                    "surface-container-high": "#e6e8ee",
+                    "tertiary-container": "#97b0ff",
+                    "surface-bright": "#f7f9ff",
+                    "primary-fixed-dim": "#e9c349",
+                    "on-primary-container": "#554300",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#241a00",
+                    "on-secondary-fixed": "#241a00",
+                    "primary": "#735c00",
+                    "on-tertiary-fixed": "#00174b",
+                    "on-background": "#181c20",
+                    "surface-dim": "#d8dadf",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e0e2e8",
+                    "on-secondary-container": "#736334",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#574500",
+                    "secondary-container": "#f7e1a6",
+                    "primary-container": "#d4af37",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#e9c349",
+                    "secondary": "#6d5d2f",
+                    "surface-container-low": "#f1f4f9",
+                    "tertiary": "#415ba4",
+                    "primary-fixed": "#ffe088"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #735c00 0%, #d4af37 100%);
+        }
+        .glass-panel {
+            background: rgba(247, 249, 255, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f1f4f9] dark:bg-slate-900">
+<div class="flex items-center justify-between px-8 py-4 max-w-[1440px] mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#735c00] dark:text-[#d4af37]">architecture</span>
+<span class="text-2xl font-extrabold tracking-tighter text-[#181c20] dark:text-white">Adanma</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-['Manrope'] font-bold text-[#4d4635] hover:text-[#d4af37] transition-colors" href="#">Home</a>
+<a class="font-['Manrope'] font-bold text-[#4d4635] hover:text-[#d4af37] transition-colors" href="#">Services</a>
+<a class="font-['Manrope'] font-bold text-[#4d4635] hover:text-[#d4af37] transition-colors" href="#">Portfolio</a>
+<a class="font-['Manrope'] font-bold text-[#735c00]" href="#">Contact</a>
+</nav>
+</div>
+</header>
+<main class="pt-24 pb-20">
+<!-- Hero Section: Editorial Asymmetry -->
+<section class="max-w-[1440px] mx-auto px-8 mb-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+<div class="lg:col-span-7">
+<span class="label-md text-primary tracking-[0.2em] font-bold block mb-4 uppercase">Established in Bende</span>
+<h1 class="text-[3.5rem] font-extrabold leading-[1.1] tracking-tight mb-8">Engineering the Future, Honoring our Roots.</h1>
+<p class="text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+                        Adanma is more than an engineering firm; it is a testament to the resilient spirit of Item, Bende LGA. Founded on the principles of technical precision and cultural heritage, we build structures that endure.
+                    </p>
+</div>
+<div class="lg:col-span-5">
+<div class="bg-surface-container-low p-8 rounded-lg">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-[2px] bg-primary"></div>
+<span class="label-md text-on-surface-variant font-bold uppercase">Heritage Note</span>
+</div>
+<p class="text-sm italic text-on-surface-variant">
+                            "The strength of a structure is found not just in its steel, but in the community it serves and the history it preserves."
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Founder Profile: The Architectural Atelier Aesthetic -->
+<section class="max-w-[1440px] mx-auto px-8 mb-32">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-[4/5] bg-surface-container-highest rounded-lg overflow-hidden">
+<img alt="Professional portrait of Obia Emenike Chidera in a bright modern office with architectural sketches and warm natural lighting" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Professional portrait of Obia Emenike Chidera in a bright modern office with architectural sketches and warm natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqobiA43UcauV7y_XPILzqP8SVfqQEtUZytQaNKUFuE3tVt9LLe08veFr8sV0f3SiIRv0L2etPk7CdmTwrFyiDFkdcsOI-Bwwg4gvJ8G8D9N94Ktm2er4WXXeD4j71qL8f-9uhVLRpHqxSkC2Sv4jLiZfE7KVDe3whjPjRMrlBAeVKCCYhjQb9XaYyikBvaZcL-Iww2ZpdDyVNASpbLHO1ljfkUwmdJSKtgKNKpCnZYR4kL4kC9D-iIVGvLz3MqG1b4Kwp3f2sT-MC"/>
+</div>
+<!-- Signature Badge -->
+<div class="absolute -bottom-6 -right-6 glass-panel p-8 rounded-lg shadow-[0_24px_48px_-12px_rgba(24,28,32,0.06)] border border-outline-variant/10">
+<p class="label-md text-primary mb-1 uppercase tracking-widest">Founder &amp; Lead Engineer</p>
+<h3 class="text-xl font-bold">Obia Emenike Chidera</h3>
+</div>
+</div>
+<div class="lg:pl-12">
+<h2 class="text-headline-md font-bold mb-8 flex items-center gap-4">
+                        The Architect's Vision
+                        <span class="h-[1px] flex-grow bg-outline-variant/20"></span>
+</h2>
+<div class="space-y-6 text-body-lg text-on-surface-variant">
+<p>
+                            Born and raised in <span class="text-on-surface font-semibold">Item, Bende LGA</span>, Obia Emenike Chidera's journey began with a fascination for the rugged landscapes and the communal architecture of Abia State. This early exposure to the balance of nature and human ingenuity became the foundation of Adanma.
+                        </p>
+<p>
+                            With over a decade of experience in structural engineering and urban planning, Obia has led Adanma to become a beacon of modern African engineering. His philosophy merges global technical standards with local contextual needs, ensuring every project respects the environment it inhabits.
+                        </p>
+<div class="pt-8">
+<button class="gold-gradient px-8 py-4 rounded text-on-primary font-bold flex items-center gap-3 hover:opacity-90 transition-all scale-95 active:scale-90">
+                                View Our Projects
+                                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Values: Bento Grid Layout -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-[1440px] mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-headline-md font-bold">The Pillars of Adanma</h2>
+<p class="text-on-surface-variant mt-2">Built on technical excellence and community values.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-lg group hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">engineering</span>
+</div>
+<h4 class="text-title-lg font-bold mb-4">Precision Engineering</h4>
+<p class="text-on-surface-variant leading-relaxed">We utilize advanced computational design to ensure mathematical perfection in every joint and beam.</p>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-lg group hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">psychology</span>
+</div>
+<h4 class="text-title-lg font-bold mb-4">Ethical Design</h4>
+<p class="text-on-surface-variant leading-relaxed">Our work in Bende LGA and beyond is guided by a commitment to sustainable and ethically sourced materials.</p>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-lg group hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">diversity_2</span>
+</div>
+<h4 class="text-title-lg font-bold mb-4">Community Legacy</h4>
+<p class="text-on-surface-variant leading-relaxed">Adanma invest heavily in local talent, creating a cycle of prosperity and technical education in our home region.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Map/Location Section -->
+<section class="max-w-[1440px] mx-auto px-8 py-24">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1">
+<h2 class="text-headline-md font-bold mb-4">Rooted in Bende</h2>
+<p class="text-body-lg text-on-surface-variant mb-8">Our headquarters remain in the heart of Item, serving as a reminder of where we began and the communities we aim to elevate.</p>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<p class="font-bold">Item Central Hub</p>
+<p class="text-sm text-on-surface-variant">Bende LGA, Abia State, Nigeria</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">call</span>
+<p class="font-bold">+234 Adanma Engineering</p>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full aspect-video bg-surface-container rounded-lg overflow-hidden shadow-sm">
+<img alt="Map view of Item, Bende LGA region with architectural markers" class="w-full h-full object-cover opacity-80" data-alt="Clean minimalist map graphic of Bende LGA region in Nigeria with soft gold and grey tones" data-location="Bende LGA, Nigeria" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcjeST5ZckXrxqFhXflm-oyMXdy62HAkr9HdDYNuOowWpnRZg-Wjm7VPfCUR8uAlZCd5GAZvhFx0tOt0qO5LGYtM7oKnt_xEUsgaeGphk_Y56QA8Lz1KthfypiI_B5lsdlR0T_jw155SyVek9Sn6pGBhaQJ_q81NQK_zLgdfEeAiJ7b_B29IG2lN07KYyjTRNiYSj5UPXULW1cpOlW-it7KpMaM49RdFseJ4IDeUOA8AybPR1hCV5lp-YWrpSkEyh3Ni1XVEupgyY0"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-[#f1f4f9] dark:bg-slate-900 border-t border-[#d0c5af]/10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1440px] mx-auto items-center">
+<div>
+<p class="text-lg font-bold text-[#181c20] mb-2">Adanma</p>
+<p class="font-['Manrope'] text-sm text-[#4d4635]">© 2024 Adanma Engineering. All rights reserved.</p>
+</div>
+<div class="flex md:justify-end gap-6">
+<a class="font-['Manrope'] text-sm text-[#4d4635] hover:text-[#735c00] transition-colors underline-offset-4 hover:underline" href="#">Privacy</a>
+<a class="font-['Manrope'] text-sm text-[#4d4635] hover:text-[#735c00] transition-colors underline-offset-4 hover:underline" href="#">Terms</a>
+<a class="font-['Manrope'] text-sm text-[#4d4635] hover:text-[#735c00] transition-colors underline-offset-4 hover:underline" href="#">Careers</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-6 pb-8 pt-4 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-t border-[#d0c5af]/15 z-50 rounded-t-[2rem] shadow-[0_24px_48px_-12px_rgba(24,28,32,0.06)]">
+<a class="flex flex-col items-center justify-center text-[#4d4635] opacity-60 hover:opacity-100 transition-opacity active:scale-90" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-[0.05em]">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#4d4635] opacity-60 hover:opacity-100 transition-opacity active:scale-90" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-[0.05em]">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#735c00] dark:text-[#d4af37] scale-110 active:scale-90" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">account_tree</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-[0.05em]">About</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#4d4635] opacity-60 hover:opacity-100 transition-opacity active:scale-90" href="#">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-[0.05em]">Contact</span>
+</a>
+</nav>
+</body></html>

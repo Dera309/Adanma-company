@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Adanma Engineering</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed": "#dbe1ff",
+                    "background": "#f7f9ff",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#eceef3",
+                    "surface": "#f7f9ff",
+                    "inverse-surface": "#2d3135",
+                    "inverse-on-surface": "#eef1f6",
+                    "on-surface": "#181c20",
+                    "on-surface-variant": "#4d4635",
+                    "surface-tint": "#735c00",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#d0c5af",
+                    "outline": "#7f7663",
+                    "on-tertiary-container": "#254188",
+                    "surface-container-high": "#e6e8ee",
+                    "tertiary-container": "#97b0ff",
+                    "surface-bright": "#f7f9ff",
+                    "primary-fixed-dim": "#e9c349",
+                    "on-primary-container": "#554300",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#241a00",
+                    "on-secondary-fixed": "#241a00",
+                    "primary": "#735c00",
+                    "on-tertiary-fixed": "#00174b",
+                    "on-background": "#181c20",
+                    "surface-dim": "#d8dadf",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e0e2e8",
+                    "on-secondary-container": "#736334",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#574500",
+                    "secondary-container": "#f7e1a6",
+                    "primary-container": "#d4af37",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#e9c349",
+                    "secondary": "#6d5d2f",
+                    "surface-container-low": "#f1f4f9",
+                    "tertiary": "#415ba4",
+                    "primary-fixed": "#ffe088"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #735c00 0%, #d4af37 100%);
+        }
+        .glass-panel {
+            background: rgba(247, 249, 255, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f1f4f9] dark:bg-slate-900">
+<nav class="flex items-center justify-between px-8 py-4 max-w-[1440px] mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#735c00]" data-icon="architecture">architecture</span>
+<span class="text-2xl font-extrabold tracking-tighter text-[#181c20]">Adanma</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#4d4635] hover:text-[#d4af37] transition-colors font-['Manrope'] font-bold" href="#">Home</a>
+<a class="text-[#735c00] font-bold transition-colors font-['Manrope']" href="#">Services</a>
+<a class="text-[#4d4635] hover:text-[#d4af37] transition-colors font-['Manrope'] font-bold" href="#">Portfolio</a>
+<a class="text-[#4d4635] hover:text-[#d4af37] transition-colors font-['Manrope'] font-bold" href="#">Contact</a>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</nav>
+</header>
+<main class="pt-24 pb-32">
+<!-- Hero Section -->
+<section class="px-8 mt-16 max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+<div class="lg:col-span-8">
+<span class="label-md text-primary font-bold tracking-[0.1em] uppercase block mb-6">Expertise &amp; Capabilities</span>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-8 leading-[1.1]">
+                    Precision Engineering for the <span class="text-primary-container">Digital Frontier</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                    We bridge the gap between architectural vision and technical execution, delivering bespoke solutions that are as robust as they are refined.
+                </p>
+</div>
+</section>
+<!-- Capabilities Bento Grid -->
+<section class="px-8 mt-24 max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Custom Software -->
+<div class="md:col-span-7 bg-surface-container-lowest rounded-lg p-10 group hover:bg-surface-container-highest transition-all duration-300">
+<div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="terminal">terminal</span>
+<span class="text-outline-variant font-bold">01</span>
+</div>
+<h3 class="text-3xl font-bold mb-4">Custom Software</h3>
+<p class="text-on-surface-variant mb-8 text-lg leading-relaxed">
+                        High-performance enterprise applications built with modern architectural patterns. We specialize in scalable backends and resilient distributed systems.
+                    </p>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-1 rounded-full bg-surface-container text-xs font-bold uppercase tracking-wider text-on-surface-variant">Cloud Native</span>
+<span class="px-4 py-1 rounded-full bg-surface-container text-xs font-bold uppercase tracking-wider text-on-surface-variant">API First</span>
+<span class="px-4 py-1 rounded-full bg-surface-container text-xs font-bold uppercase tracking-wider text-on-surface-variant">Scalability</span>
+</div>
+</div>
+<!-- Technical Strategy -->
+<div class="md:col-span-5 bg-surface-container-low rounded-lg p-10 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="insights">insights</span>
+<span class="text-outline-variant font-bold">02</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Technical Strategy</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">
+                            Roadmapping and architectural consulting to align your technology stack with business objectives.
+                        </p>
+</div>
+<button class="gold-gradient text-on-primary px-6 py-3 rounded-DEFAULT font-bold flex items-center justify-center gap-2 self-start hover:opacity-90 transition-opacity">
+                        Request Audit
+                        <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- UI/UX -->
+<div class="md:col-span-5 bg-surface-container-high rounded-lg p-10 flex flex-col justify-between overflow-hidden relative">
+<img alt="" class="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-multiply" data-alt="clean minimalist user interface design dashboard with thin gold lines and geometric shapes on white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY1NPBAapDLMik4rVDhW7FLhyXJU9nMeiV5l3xSZue_O65aNk6NQQZdbX7-JtdwVCnqRuJMhvMF6DONKjZodtWaZUi5P7Kxs0C24Lv_SxXHuF5UrNvg5qw2L46MwBWneCy3gdq21ie85rLVbMZao_p-rZFNpyS6yr_o8FpuFdzpp6xauo6Hl3e6YgLtkx5dGzjMl-uDyPjNu1ESlRm5-95Rn1nL4BB5gDtSQ5HTxwTa-_IJG0lA5xKFOKSUNEiauHHhT3w7zvHFpPE"/>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="brush">brush</span>
+<span class="text-outline-variant font-bold">03</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">UI/UX Design</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            Human-centric interfaces that prioritize clarity and technical precision over decorative clutter.
+                        </p>
+</div>
+</div>
+<!-- Cloud Solutions -->
+<div class="md:col-span-7 bg-surface-container-lowest rounded-lg p-10 group hover:bg-surface-container-highest transition-all duration-300">
+<div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="cloud_done">cloud_done</span>
+<span class="text-outline-variant font-bold">04</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div>
+<h3 class="text-3xl font-bold mb-4">Cloud Solutions</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                                Seamless migration and infrastructure optimization across AWS, GCP, and Azure environments.
+                            </p>
+</div>
+<div class="flex flex-col gap-4 justify-end">
+<div class="flex items-center gap-3 text-on-surface font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                                Multi-cloud orchestration
+                            </div>
+<div class="flex items-center gap-3 text-on-surface font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                                Serverless Architecture
+                            </div>
+<div class="flex items-center gap-3 text-on-surface font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                                Cost Optimization
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Methodology Section -->
+<section class="mt-32 px-8 max-w-[1440px] mx-auto">
+<div class="mb-20">
+<span class="label-md text-primary font-bold tracking-[0.1em] uppercase block mb-4">How we work</span>
+<h2 class="text-4xl font-bold tracking-tight">The Adanma Methodology</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 relative">
+<!-- Vertical strip for active step -->
+<div class="hidden md:block absolute top-0 left-0 w-full h-[2px] bg-surface-container-high mt-6"></div>
+<!-- Step 1 -->
+<div class="relative pt-12 group">
+<div class="absolute top-0 left-0 w-12 h-[2px] bg-primary z-10 transition-all duration-500 group-hover:w-full"></div>
+<h4 class="text-xl font-bold mb-4 text-on-surface">Discovery</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        We begin with deep-tissue research into your technical constraints and business logic.
+                    </p>
+</div>
+<!-- Step 2 -->
+<div class="relative pt-12 group">
+<div class="absolute top-0 left-0 w-12 h-[2px] bg-primary-container z-10"></div>
+<h4 class="text-xl font-bold mb-4 text-on-surface">Blueprint</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        Architectural diagrams and system specifications are refined before a single line of code is written.
+                    </p>
+</div>
+<!-- Step 3 -->
+<div class="relative pt-12 group">
+<div class="absolute top-0 left-0 w-12 h-[2px] bg-primary-container z-10"></div>
+<h4 class="text-xl font-bold mb-4 text-on-surface">Execution</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        Agile sprints with weekly deployments and continuous feedback loops ensure alignment.
+                    </p>
+</div>
+<!-- Step 4 -->
+<div class="relative pt-12 group">
+<div class="absolute top-0 left-0 w-12 h-[2px] bg-primary-container z-10"></div>
+<h4 class="text-xl font-bold mb-4 text-on-surface">Calibration</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                        Post-launch monitoring and optimization to ensure peak performance and security compliance.
+                    </p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-32 px-8 max-w-[1440px] mx-auto">
+<div class="bg-surface-container-low rounded-lg p-16 flex flex-col md:flex-row items-center justify-between gap-12 overflow-hidden relative">
+<div class="relative z-10">
+<h2 class="text-4xl font-extrabold mb-6">Ready to engineer your next <span class="text-primary">breakthrough?</span></h2>
+<p class="text-on-surface-variant text-lg max-w-xl mb-10">
+                        Join the forward-thinking companies that trust Adanma for their most critical technical infrastructure.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="gold-gradient text-on-primary px-10 py-4 rounded-DEFAULT font-bold text-lg hover:shadow-lg transition-shadow">
+                            Schedule a Consultation
+                        </button>
+<button class="bg-transparent border border-outline/20 text-on-surface px-10 py-4 rounded-DEFAULT font-bold text-lg hover:bg-surface-container transition-colors">
+                            View Case Studies
+                        </button>
+</div>
+</div>
+<div class="relative hidden lg:block">
+<div class="w-64 h-64 border-2 border-primary-container/20 rounded-full flex items-center justify-center animate-pulse">
+<span class="material-symbols-outlined text-8xl text-primary/10" data-icon="architecture" style="font-variation-settings: 'FILL' 1;">architecture</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 bg-[#f1f4f9] dark:bg-slate-900 border-t border-[#d0c5af]/10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1440px] mx-auto items-center">
+<div>
+<span class="text-lg font-bold text-[#181c20]">Adanma Engineering</span>
+<p class="font-['Manrope'] text-sm text-[#4d4635] mt-2 opacity-80">© 2024 Adanma Engineering. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap md:justify-end gap-6">
+<a class="font-['Manrope'] text-sm text-[#4d4635] hover:text-[#735c00] transition-colors underline-offset-4 hover:underline" href="#">Privacy</a>
+<a class="font-['Manrope'] text-sm text-[#4d4635] hover:text-[#735c00] transition-colors underline-offset-4 hover:underline" href="#">Terms</a>
+<a class="font-['Manrope'] text-sm text-[#4d4635] hover:text-[#735c00] transition-colors underline-offset-4 hover:underline" href="#">Careers</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-6 pb-8 pt-4 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl z-50 rounded-t-[2rem] border-t border-[#d0c5af]/15 shadow-[0_24px_48px_-12px_rgba(24,28,32,0.06)]">
+<div class="flex flex-col items-center justify-center text-[#4d4635] opacity-60 hover:opacity-100 transition-opacity active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-[0.05em]">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#735c00] scale-110 active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="settings_gear">settings</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-[0.05em]">Services</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#4d4635] opacity-60 hover:opacity-100 transition-opacity active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="account_tree">account_tree</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-[0.05em]">Portfolio</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#4d4635] opacity-60 hover:opacity-100 transition-opacity active:scale-90 transition-all">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-[0.05em]">Contact</span>
+</div>
+</nav>
+</body></html>

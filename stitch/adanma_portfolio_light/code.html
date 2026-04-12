@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed": "#dbe1ff",
+                    "background": "#f7f9ff",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#eceef3",
+                    "surface": "#f7f9ff",
+                    "inverse-surface": "#2d3135",
+                    "inverse-on-surface": "#eef1f6",
+                    "on-surface": "#181c20",
+                    "on-tertiary-fixed-variant": "#27438a",
+                    "tertiary-fixed-dim": "#b4c5ff",
+                    "secondary-fixed-dim": "#dac58d",
+                    "surface-container-highest": "#e0e2e8",
+                    "on-secondary-fixed-variant": "#544519",
+                    "secondary-fixed": "#f7e1a6",
+                    "on-surface-variant": "#4d4635",
+                    "surface-tint": "#735c00",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#d0c5af",
+                    "outline": "#7f7663",
+                    "on-tertiary-container": "#254188",
+                    "surface-container-high": "#e6e8ee",
+                    "tertiary-container": "#97b0ff",
+                    "surface-bright": "#f7f9ff",
+                    "primary-fixed-dim": "#e9c349",
+                    "on-primary-container": "#554300",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#241a00",
+                    "on-secondary-fixed": "#241a00",
+                    "primary": "#735c00",
+                    "on-tertiary-fixed": "#00174b",
+                    "on-background": "#181c20",
+                    "surface-dim": "#d8dadf",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e0e2e8",
+                    "on-secondary-container": "#736334",
+                    "error-container": "#ffdad6",
+                    "on-primary-fixed-variant": "#574500",
+                    "secondary-container": "#f7e1a6",
+                    "primary-container": "#d4af37",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#e9c349",
+                    "secondary": "#6d5d2f",
+                    "surface-container-low": "#f1f4f9",
+                    "tertiary": "#415ba4",
+                    "primary-fixed": "#ffe088"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #735c00 0%, #d4af37 100%);
+        }
+        .glass-panel {
+            background: rgba(247, 249, 255, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f1f4f9] dark:bg-slate-900">
+<div class="flex items-center justify-between px-8 py-4 max-w-[1440px] mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#735c00] dark:text-[#d4af37]" style="font-size: 28px;">architecture</span>
+<span class="text-2xl font-extrabold tracking-tighter text-[#181c20] dark:text-white">Adanma</span>
+</div>
+<div class="hidden md:flex items-center gap-8 font-['Manrope'] font-bold text-[#181c20] tracking-tight">
+<a class="text-[#4d4635] hover:text-[#d4af37] transition-colors" href="#">Home</a>
+<a class="text-[#4d4635] hover:text-[#d4af37] transition-colors" href="#">Services</a>
+<a class="text-[#735c00] font-bold transition-colors" href="#">Portfolio</a>
+<a class="text-[#4d4635] hover:text-[#d4af37] transition-colors" href="#">Contact</a>
+</div>
+<button class="gold-gradient text-on-primary px-6 py-2 rounded-full font-bold text-sm tracking-tight scale-95 transition-transform duration-150 active:scale-90">
+                HIRE US
+            </button>
+</div>
+</nav>
+<main class="pt-24 pb-32">
+<!-- Hero Section -->
+<section class="max-w-[1440px] mx-auto px-8 mb-20">
+<div class="md:ml-[10%] max-w-4xl">
+<span class="label-md text-primary font-bold tracking-[0.1em] mb-4 block uppercase">The Engineering Portfolio</span>
+<h1 class="text-[3.5rem] font-extrabold leading-[1.1] text-on-surface mb-6">Structural Precision.<br/><span class="text-primary-container italic">Architectural Soul.</span></h1>
+<p class="body-lg text-on-surface-variant max-w-xl">
+                    Showcasing a curated selection of engineering feats where technical rigor meets aesthetic minimalist design. Every line served with intent.
+                </p>
+</div>
+</section>
+<!-- Project Filter/Grid Section -->
+<section class="max-w-[1440px] mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Project 1: Featured Large (Asymmetric) -->
+<div class="md:col-span-8 group">
+<div class="relative bg-surface-container-lowest rounded-lg overflow-hidden transition-all duration-300">
+<img alt="Modern Skyscraper" class="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="high-angle architectural shot of a glass and steel skyscraper reflecting the blue sky in a minimalist geometric composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAscgHCquRH5WgAfwN1OVVgatHMaBi0okqp0HEp1hbdOpDMVBV-2bjJ2jjUHzEzD-Gc9-Y-nRPtfluIFVllpHjemVXtxOPGn1uhitw2QW24qHvcDurJrBBLfRFgAGsnuVJYAx3ichS9NKx3z-3v1YJMEun6wPeK8LaNTSEwSMJ-MAc7tFafAlqNJTeUUARtQsA1xofGYOBjS7_W9ecIyzTD1tmeYzSGklqjrxh2YTw9Ay62nwY144abbvJyKUz7c6zuk-XSzwqlqmmg"/>
+<div class="absolute bottom-0 left-0 p-8 w-full glass-panel translate-y-2 group-hover:translate-y-0 transition-transform">
+<div class="flex justify-between items-end">
+<div>
+<span class="label-md text-primary mb-2 block">STRUCTURAL ANALYSIS • 2023</span>
+<h3 class="title-lg font-bold">The Zenith Pavilion</h3>
+</div>
+<span class="material-symbols-outlined text-primary-container text-4xl">arrow_outward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project 2: Side Vertical -->
+<div class="md:col-span-4 flex flex-col gap-8">
+<div class="bg-surface-container-low p-8 rounded-lg flex flex-col justify-between h-full min-h-[400px]">
+<div>
+<span class="label-md text-primary mb-2 block">BRIDGE DESIGN</span>
+<h3 class="title-lg font-bold mb-4">Golden Gate Retrofit</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Advanced seismic reinforcement modeling for historical suspension structures using proprietary AI algorithms.</p>
+</div>
+<div class="flex gap-2 flex-wrap mt-6">
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-bold text-on-surface-variant uppercase">Seismic</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-bold text-on-surface-variant uppercase">Steel</span>
+</div>
+</div>
+</div>
+<!-- Project 3: Medium Grid -->
+<div class="md:col-span-4">
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden group">
+<img alt="Interior Concrete" class="w-full h-[300px] object-cover" data-alt="minimalist interior of a brutalist concrete building with dramatic natural light shafts hitting a smooth grey floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVg6ZEjCu6SZ7x_hCBoQFeKd8zjb5iNDJG_KvNjrHp0H3-1l4Bpcxd4mWsMUm2N0f7FE03XbnZ_zebVTnFfgdI9_o93Lf2e-7xIusT377X_5FsmrIv3ffH9pqoDsyCnL0CngJkzWRmoNZeB2_Oh793ec4BCKuHU1EfYFKzPfnptJONLZswvJiL5DUGrToPvFS5BOIuIbTgXvKUyS6ALxk_DS71Ln1RjAu4VK_mRCMv_NRtDXxTmNDO8MkGS9NID2Ng9QPCTgHp5WED"/>
+<div class="p-6">
+<h3 class="title-lg font-bold mb-2">Nexus Hub</h3>
+<p class="text-sm text-on-surface-variant mb-4">Brutalist office infrastructure for emerging tech giants.</p>
+<a class="text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all" href="#">View Blueprint <span class="material-symbols-outlined text-sm">trending_flat</span></a>
+</div>
+</div>
+</div>
+<!-- Project 4: Wide Feature -->
+<div class="md:col-span-8">
+<div class="bg-surface-container-high rounded-lg p-12 flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1 order-2 md:order-1">
+<span class="label-md text-primary mb-4 block">SUSTAINABILITY FIRST</span>
+<h3 class="text-2xl font-extrabold mb-4 leading-tight">Solar Wind Thermal Exchange System</h3>
+<p class="body-lg text-on-surface-variant mb-6">A groundbreaking integration of HVAC and renewable energy for net-zero industrial campuses in Northern Europe.</p>
+<button class="border border-outline/20 px-8 py-3 rounded-full font-bold text-xs tracking-widest hover:bg-surface-container-highest transition-colors">READ WHITE PAPER</button>
+</div>
+<div class="flex-1 order-1 md:order-2">
+<img alt="Solar Farm" class="rounded-lg shadow-sm" data-alt="abstract close up of blue solar panels reflecting a clear golden sky with technical industrial patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVGHIH9Y31c34cZgyt8oDHaTLrfpUVQtO5jwrwjH0L8qNpyEPSGpxQ58JAfH6pviSnG7sB-kdYVnt9iXd0ppQ6VyNrb7yFdeTMnPMDJLSeCn5O8SBRobB-80Mq_PGdOfg2BWGeZkft6CWfzRxukNxmjOvj6WVYWNtqiU81RURoA2TRcIjLCTiEown-7hlRIIEoIxbH7rj_r3LMn_BiBkb3srs0HaXZ3wjmkTFLy4GYUcZRq-p6JviSPCfujLRje6uRSq0MFVPHqtkM"/>
+</div>
+</div>
+</div>
+<!-- Project 5: Data Blueprint Style -->
+<div class="md:col-span-12 mt-12 bg-surface-container-low rounded-lg p-8">
+<div class="flex justify-between items-center mb-8">
+<h2 class="headline-md font-bold">Technical Project Index</h2>
+<span class="label-md text-on-surface-variant">4 Active / 42 Completed</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="border-b border-outline-variant/15">
+<tr>
+<th class="py-4 label-md text-on-surface-variant">PROJECT ID</th>
+<th class="py-4 label-md text-on-surface-variant">LOCATION</th>
+<th class="py-4 label-md text-on-surface-variant">MATERIAL FOCUS</th>
+<th class="py-4 label-md text-on-surface-variant text-right">EFFICIENCY RATING</th>
+</tr>
+</thead>
+<tbody class="body-lg">
+<tr class="group hover:bg-surface-container-lowest transition-colors">
+<td class="py-6 flex items-center gap-4">
+<div class="w-0.5 h-6 bg-primary-container opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="font-bold">E-72: Hydro-Dynamics</span>
+</td>
+<td class="py-6 text-on-surface-variant">Oslo, NO</td>
+<td class="py-6"><span class="px-2 py-1 bg-surface-container rounded text-xs">Composite Carbon</span></td>
+<td class="py-6 text-right font-mono text-primary font-bold">98.4%</td>
+</tr>
+<tr class="group hover:bg-surface-container-lowest transition-colors">
+<td class="py-6 flex items-center gap-4">
+<div class="w-0.5 h-6 bg-primary-container opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="font-bold">E-89: Vertical Green</span>
+</td>
+<td class="py-6 text-on-surface-variant">Singapore, SG</td>
+<td class="py-6"><span class="px-2 py-1 bg-surface-container rounded text-xs">Bio-Concrete</span></td>
+<td class="py-6 text-right font-mono text-primary font-bold">92.1%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f1f4f9] dark:bg-slate-900 w-full py-12 px-8 border-t border-[#d0c5af]/10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1440px] mx-auto items-center">
+<div>
+<span class="text-lg font-bold text-[#181c20] block mb-2">Adanma Engineering</span>
+<p class="font-['Manrope'] text-sm text-[#4d4635]">© 2024 Adanma Engineering. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap gap-8 md:justify-end">
+<a class="font-['Manrope'] text-sm text-[#4d4635] hover:text-[#735c00] transition-colors underline-offset-4 hover:underline" href="#">Privacy</a>
+<a class="font-['Manrope'] text-sm text-[#4d4635] hover:text-[#735c00] transition-colors underline-offset-4 hover:underline" href="#">Terms</a>
+<a class="font-['Manrope'] text-sm text-[#4d4635] hover:text-[#735c00] transition-colors underline-offset-4 hover:underline" href="#">Careers</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<div class="md:hidden">
+<div class="fixed bottom-0 left-0 w-full flex justify-around items-center px-6 pb-8 pt-4 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl z-50 rounded-t-[2rem] border-t border-[#d0c5af]/15 shadow-[0_24px_48px_-12px_rgba(24,28,32,0.06)]">
+<div class="flex flex-col items-center justify-center text-[#4d4635] opacity-60 hover:opacity-100 transition-opacity active:scale-90 transition-all">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-[0.05em]">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#4d4635] opacity-60 hover:opacity-100 transition-opacity active:scale-90 transition-all">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-[0.05em]">Services</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#735c00] dark:text-[#d4af37] scale-110 active:scale-90 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">account_tree</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-[0.05em]">Portfolio</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#4d4635] opacity-60 hover:opacity-100 transition-opacity active:scale-90 transition-all">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-[0.05em]">Contact</span>
+</div>
+</div>
+</div>
+</body></html>
