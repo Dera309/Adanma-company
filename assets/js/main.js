@@ -23,6 +23,24 @@ if (navbar) {
   });
 }
 
+// Mobile hamburger menu toggle
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+    const icon = menuToggle.querySelector('.material-symbols-outlined');
+    icon.textContent = mobileMenu.classList.contains('open') ? 'close' : 'menu';
+  });
+  // Close menu when a link is clicked
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      menuToggle.querySelector('.material-symbols-outlined').textContent = 'menu';
+    });
+  });
+}
+
 // Contact form submission (WhatsApp redirect)
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {

@@ -41,12 +41,39 @@ body {
 .reveal-stagger.visible > *:nth-child(3) { opacity: 1; transform: none; transition-delay: 0.2s; }
 .reveal-stagger.visible > *:nth-child(4) { opacity: 1; transform: none; transition-delay: 0.3s; }
 
-/* Active nav link */
-.nav-active {
-  color: #735c00 !important;
-  font-weight: 700;
-}
-
 /* Scrollbar hide utility */
 .scrollbar-hide::-webkit-scrollbar { display: none; }
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Mobile menu */
+#mobile-menu {
+  display: none;
+}
+#mobile-menu.open {
+  display: flex;
+}
+
+/* Responsive table on small screens */
+@media (max-width: 640px) {
+  .portfolio-table th:nth-child(2),
+  .portfolio-table td:nth-child(2),
+  .portfolio-table th:nth-child(3),
+  .portfolio-table td:nth-child(3) {
+    display: none;
+  }
+}
+
+/* Prevent horizontal overflow globally */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Founder badge responsive fix */
+@media (max-width: 768px) {
+  .founder-badge {
+    position: relative !important;
+    bottom: auto !important;
+    right: auto !important;
+    margin-top: 1rem;
+  }
+}
