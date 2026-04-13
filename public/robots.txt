@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://adanma.engineering/sitemap.xml
+Sitemap: https://adanma-inc.shop/sitemap.xml
